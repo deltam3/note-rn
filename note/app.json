@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.expoisgood.note"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.expoisgood.note"
     },
     "web": {
       "bundler": "metro",
@@ -27,7 +29,13 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-local-authentication",
+        {
+          "facecIDPermission": "${PRODUCT_NAME}이 Face ID를 사용하게 허락하기"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
