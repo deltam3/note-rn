@@ -35,6 +35,12 @@
         {
           "facecIDPermission": "${PRODUCT_NAME}이 Face ID를 사용하게 허락하기"
         }
+      ],
+      [
+        "expo-dev-launcher",
+        {
+          "launchMode": "most-recent"
+        }
       ]
     ],
     "experiments": {
